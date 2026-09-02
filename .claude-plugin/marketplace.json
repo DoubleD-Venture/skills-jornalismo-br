@@ -1,0 +1,54 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "doubled-skills",
+  "description": "Skills de jornalismo e checagem em português do Brasil: apuração com fontes brasileiras (LAI, TSE, IBGE, Diário Oficial, portais de transparência), verificação de claim com saída em ClaimReview, verificação de imagem com Content Credentials, e checklist de publicação com LGPD.",
+  "owner": {
+    "name": "DoubleD Venture",
+    "email": "contato@doubledventure.com"
+  },
+  "plugins": [
+    {
+      "name": "doubled-skills",
+      "displayName": "Skills de Jornalismo BR",
+      "description": "Doze skills de jornalismo em pt-BR para apuração, checagem e redação, escritas para as fontes brasileiras. Licença MIT, sem cadastro.",
+      "author": {
+        "name": "DoubleD Venture",
+        "url": "https://doubledventure.com"
+      },
+      "category": "productivity",
+      "keywords": [
+        "jornalismo",
+        "fact-check",
+        "checagem",
+        "pt-BR",
+        "brasil",
+        "apuracao",
+        "lgpd",
+        "lai"
+      ],
+      "version": "1.0.0",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/DoubleD-Venture/skills-jornalismo-br.git",
+        "path": "skills",
+        "ref": "main"
+      },
+      "strict": false,
+      "skills": [
+        "./checklist-de-publicacao",
+        "./dados-do-ibge",
+        "./dados-eleitorais-tse",
+        "./diario-oficial",
+        "./pedido-lai",
+        "./portais-de-transparencia",
+        "./titulo-e-linha-fina",
+        "./traducao-editorial",
+        "./transcricao-de-entrevista",
+        "./verificacao-de-claim",
+        "./verificacao-de-fonte",
+        "./verificacao-de-imagem"
+      ],
+      "homepage": "https://doubledventure.com/skills"
+    }
+  ]
+}
