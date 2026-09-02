@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { load } from "js-yaml";
 
 /*
@@ -11,9 +12,16 @@ import { load } from "js-yaml";
   mensagem diz o arquivo, o campo e o motivo.
 
   Também confere o que o padrão SKILL.md exige e o que este catálogo exige
-  além disso, para que uma skill nova não entre sem categoria, sem plano ou
+  além disso, para que uma skill nova não entre sem categoria, sem versão ou
   com slug diferente do `name`.
 */
+
+/*
+  A pasta é resolvida a partir da localização deste arquivo, e não do diretório
+  de trabalho. O site consome esta biblioteca como submódulo e chama o
+  verificador de fora — com caminho relativo ao cwd, ele procurava   na raiz do site e quebrava.
+*/
+const PASTA = join(dirname(fileURLToPath(import.meta.url)), '..', 'skills');
 
 const CATEGORIAS = ["fact-check", "apuracao", "dados", "redacao", "etica"];
 const OBRIGATORIOS_TYPEDIT = [
@@ -31,13 +39,13 @@ const DESC_MAX = 500;
 
 const erros = [];
 const avisos = [];
-const slugs = readdirSync("skills", { withFileTypes: true })
+const slugs = readdirSync(PASTA, { withFileTypes: true })
   .filter((e) => e.isDirectory())
   .map((e) => e.name)
   .sort();
 
 for (const slug of slugs) {
-  const caminho = join("skills", slug, "SKILL.md");
+  const caminho = join(PASTA, slug, "SKILL.md");
   const erro = (msg) => erros.push(`${slug}: ${msg}`);
   const aviso = (msg) => avisos.push(`${slug}: ${msg}`);
 
