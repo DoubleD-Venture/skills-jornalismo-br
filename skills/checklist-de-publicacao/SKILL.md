@@ -7,8 +7,9 @@ doubled:
   categoria: etica
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: "A última passada antes de publicar: LGPD, direito de resposta, fonte protegida e IA declarada."
+  serp: 'Skill da última passada antes de publicar: LGPD, direito de resposta, proteção de fonte e uso de IA declarado, item por item, com o que trava a publicação.'
   saida:
     - Relatório de bloqueios e ressalvas
   fontes:

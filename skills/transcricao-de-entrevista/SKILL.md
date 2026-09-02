@@ -7,8 +7,9 @@ doubled:
   categoria: apuracao
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: Da transcrição bruta ao material de apuração, com citações fiéis e o que ficou em aberto.
+  serp: 'Skill que vira transcrição bruta em material de apuração: citação fiel, trecho marcado por tempo e a lista do que ficou em aberto para a próxima conversa.'
   saida:
     - Transcrição limpa com marcação de tempo
     - Citações candidatas

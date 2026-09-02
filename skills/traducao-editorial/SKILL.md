@@ -7,8 +7,9 @@ doubled:
   categoria: redacao
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: Tradução que preserva a citação, converte o contexto e avisa o que precisa de nota.
+  serp: 'Skill de tradução editorial que preserva a citação, converte o contexto local em vez de traduzi-lo e marca o que precisa de nota do editor antes de publicar.'
   saida:
     - Texto traduzido
     - Lista de decisões e notas necessárias

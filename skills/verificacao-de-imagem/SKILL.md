@@ -7,8 +7,9 @@ doubled:
   categoria: fact-check
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: Proveniência, busca reversa e contexto para decidir se a mídia sustenta publicação.
+  serp: 'Skill para decidir se uma imagem ou vídeo sustenta publicação: proveniência C2PA, busca reversa e leitura de contexto, com o limite de cada uma anotado.'
   saida:
     - Ficha de proveniência
     - Veredito com nível de confiança

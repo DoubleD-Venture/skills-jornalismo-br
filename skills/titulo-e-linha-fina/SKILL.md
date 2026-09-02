@@ -7,8 +7,9 @@ doubled:
   categoria: redacao
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: Título e linha fina dentro do manual do veículo, sem prometer o que o texto não entrega.
+  serp: 'Skill que escreve título e linha fina dentro do manual do veículo, sem prometer o que o texto não entrega nem afirmar o que a apuração não sustenta.'
   saida:
     - Três opções de título
     - Linha fina

@@ -7,8 +7,9 @@ doubled:
   categoria: dados
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: Gasto público sem confundir empenho com pagamento, e com o fornecedor cruzado de verdade.
+  serp: 'Skill para ler gasto público em portal de transparência sem confundir empenho, liquidação e pagamento, e cruzando o fornecedor pelo CNPJ de verdade.'
   saida:
     - Tabela de execução por etapa
     - Ficha do fornecedor

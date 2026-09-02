@@ -7,8 +7,9 @@ doubled:
   categoria: apuracao
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: Redige o pedido, escolhe o órgão, controla o prazo e monta o recurso na negativa.
+  serp: 'Skill que redige pedido de acesso à informação pela Lei 12.527, escolhe o órgão certo, controla o prazo legal e monta o recurso quando a resposta é negada.'
   saida:
     - Texto do pedido
     - Cronograma de prazos

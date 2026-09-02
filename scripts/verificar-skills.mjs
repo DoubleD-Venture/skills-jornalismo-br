@@ -19,14 +19,16 @@ import { load } from "js-yaml";
 /*
   A pasta é resolvida a partir da localização deste arquivo, e não do diretório
   de trabalho. O site consome esta biblioteca como submódulo e chama o
-  verificador de fora — com caminho relativo ao cwd, ele procurava   na raiz do site e quebrava.
+  verificador de fora — com caminho relativo ao cwd, ele procurava `skills/`
+  na raiz do site e quebrava.
 */
 const PASTA = join(dirname(fileURLToPath(import.meta.url)), '..', 'skills');
 
 const CATEGORIAS = ["fact-check", "apuracao", "dados", "redacao", "etica"];
-const OBRIGATORIOS_TYPEDIT = [
+const OBRIGATORIOS_CATALOGO = [
   "titulo",
   "resumo",
+  "serp",
   "categoria",
   "versao",
   "atualizado",
@@ -36,6 +38,22 @@ const OBRIGATORIOS_TYPEDIT = [
 /* Limite da `description`: é ela que o agente lê para decidir se ativa a
    skill, e description longa demais desperdiça o orçamento de descoberta. */
 const DESC_MAX = 500;
+
+/*
+  Faixa da `serp`, que é a description da página da skill no catálogo web.
+
+  Três textos por skill parece demais até se notar que os três têm leitores
+  diferentes: a `description` é lida por um agente decidindo se ativa a skill,
+  o `resumo` é a linha do card na listagem, e a `serp` é o que aparece no
+  resultado de busca. Nenhum serve no lugar do outro — o do agente passa de
+  200 caracteres e o do card não chega a 100.
+
+  Abaixo de 140 o buscador costuma descartar a description e escrever a sua
+  própria; acima de 158 ele corta no meio da frase. Os dois estragam o
+  resultado de um jeito que não aparece olhando a página.
+*/
+const SERP_MIN = 140;
+const SERP_MAX = 158;
 
 const erros = [];
 const avisos = [];
@@ -88,13 +106,19 @@ for (const slug of slugs) {
 
   // Campos deste catálogo
   const t = fm.doubled ?? {};
-  for (const campo of OBRIGATORIOS_TYPEDIT) {
+  for (const campo of OBRIGATORIOS_CATALOGO) {
     if (!t[campo]) erro(`falta \`doubled.${campo}\``);
   }
   if (t.categoria && !CATEGORIAS.includes(t.categoria))
     erro(`categoria "${t.categoria}" não existe (use: ${CATEGORIAS.join(", ")})`);
   if (t.atualizado && !/^\d{4}-\d{2}-\d{2}$/.test(String(t.atualizado)))
     erro("`doubled.atualizado` deve ser AAAA-MM-DD entre aspas");
+  if (typeof t.serp === "string" && (t.serp.length < SERP_MIN || t.serp.length > SERP_MAX))
+    erro(
+      "`doubled.serp` tem " + t.serp.length + " caracteres; precisa de " +
+        SERP_MIN + " a " + SERP_MAX +
+        " (abaixo o buscador descarta e escreve a dele, acima ele corta)",
+    );
 
   const corpo = bruto.slice(m[0].length);
 

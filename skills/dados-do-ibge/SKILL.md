@@ -7,8 +7,9 @@ doubled:
   categoria: dados
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: A série certa, o recorte certo e a ressalva certa em dado de desemprego, inflação e renda.
+  serp: 'Skill para usar dado do IBGE sem escorregar: escolhe a série certa, deflaciona quando precisa e declara a margem de erro em desemprego, inflação e renda.'
   saida:
     - Série apurada com fonte e data
     - Parágrafo de metodologia

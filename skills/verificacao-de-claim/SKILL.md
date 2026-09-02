@@ -7,8 +7,9 @@ doubled:
   categoria: fact-check
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: Separa alegação de opinião, verifica cada uma e devolve ClaimReview pronto para publicar.
+  serp: 'Skill que separa alegação verificável de opinião, checa cada uma e devolve o resultado em ClaimReview, o formato que o Google lê no resultado de busca.'
   saida:
     - ClaimReview (schema.org)
     - Tabela de alegações com veredito

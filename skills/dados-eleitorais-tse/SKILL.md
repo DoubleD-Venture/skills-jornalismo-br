@@ -7,8 +7,9 @@ doubled:
   categoria: dados
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: Candidatura, bens, doadores e contas do TSE, com as armadilhas de recorte mapeadas.
+  serp: 'Skill para candidatura, bens, doadores e prestação de contas no TSE, com as armadilhas de recorte e a consolidação por CPF do doador já mapeadas.'
   saida:
     - Tabela apurada com fonte e data de extração
     - Ressalvas metodológicas

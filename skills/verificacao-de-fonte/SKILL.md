@@ -7,8 +7,9 @@ doubled:
   categoria: fact-check
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: Aplica o SIFT para decidir se uma fonte sustenta citação, antes de ela entrar na matéria.
+  serp: 'Skill que aplica o método SIFT para decidir se uma fonte sustenta citação, antes de ela entrar na matéria. Para apuração e checagem em português do Brasil.'
   saida:
     - Ficha da fonte
     - Recomendação de uso

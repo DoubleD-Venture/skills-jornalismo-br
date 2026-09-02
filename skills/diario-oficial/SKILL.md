@@ -7,8 +7,9 @@ doubled:
   categoria: apuracao
   versao: 1.0.0
   atualizado: "2026-08-28"
-  autor: typedit
+  autor: doubled
   resumo: "Do ato publicado à pauta: tipo, partes, valores, prazos e o que merece apuração."
+  serp: 'Skill que lê Diário Oficial e devolve pauta: tipo do ato, partes, valores e prazos, e os buracos que viram pedido de acesso à informação no dia seguinte.'
   saida:
     - Ficha do ato
     - Linha do tempo processual

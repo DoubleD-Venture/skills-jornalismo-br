@@ -95,11 +95,27 @@ doubled:
   versao: 1.0.0
   atualizado: "2026-08-28"  # entre aspas, senão o YAML lê como data
   autor: doubled
-  resumo: ...
+  resumo: ...            # a linha do card na listagem
+  serp: '...'            # 140 a 158 caracteres, ver abaixo
   saida: [...]
   fontes: [...]
 ---
 ```
+
+#### Três textos, três leitores
+
+Parece redundante até se ver quem lê cada um:
+
+| Campo | Quem lê | Tamanho |
+| --- | --- | --- |
+| `description` | o agente, para decidir se ativa a skill | até 500 |
+| `resumo` | quem passa o olho na listagem | ~80 a 100 |
+| `serp` | quem vê a página no resultado de busca | 140 a 158 |
+
+Nenhum serve no lugar do outro: o do agente passa de 200 caracteres e o do
+card não chega a 100. Fora da faixa de 140 a 158, o buscador ou descarta a
+description e escreve a dele, ou corta no meio da frase — e as duas coisas
+acontecem sem aparecer nada de errado na página. O `check` mede.
 
 > **Aspas importam.** Valor com dois-pontos seguido de espaço
 > (`publicar: LGPD`) é YAML inválido sem aspas. O `check` pega isso com
