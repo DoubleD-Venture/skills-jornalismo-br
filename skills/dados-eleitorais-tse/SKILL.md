@@ -1,6 +1,6 @@
 ---
 name: dados-eleitorais-tse
-description: Apura dados eleitorais brasileiros com as bases do TSE — candidaturas, bens, prestação de contas, doadores e resultados — evitando as armadilhas metodológicas que produzem manchete errada. Use em pauta de eleição, financiamento de campanha ou patrimônio de candidato.
+description: Apura dados eleitorais brasileiros com as bases do TSE (candidaturas, bens, prestação de contas, doadores e resultados), evitando as armadilhas metodológicas que produzem manchete errada. Use em pauta de eleição, financiamento de campanha ou patrimônio de candidato.
 license: MIT
 doubled:
   titulo: Dados eleitorais (TSE)
@@ -67,7 +67,7 @@ Sempre, e no topo do material:
 - nome do arquivo e versão, se houver
 
 Dado eleitoral é vivo: candidatura muda de situação, conta é julgada, valor é
-retificado. Sem data de extração, o número não é reproduzível — e vai ser
+retificado. Sem data de extração, o número não é reproduzível, e vai ser
 questionado.
 
 ### 4. Armadilhas que geram erro de manchete

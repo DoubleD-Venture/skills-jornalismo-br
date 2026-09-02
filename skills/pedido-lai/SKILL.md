@@ -32,9 +32,9 @@ rende documento no meio da apuração, e não depois do fechamento.
 
 Não é a redação bonita. É, nesta ordem:
 
-1. **pedir ao órgão certo** — pedido no órgão errado é negado por
+1. **pedir ao órgão certo**: pedido no órgão errado é negado por
    incompetência e queima 20 dias
-2. **pedir documento, não explicação** — "quero o contrato nº X" funciona;
+2. **pedir documento, não explicação**: "quero o contrato nº X" funciona;
    "quero saber por que gastaram tanto" não
 3. **ser específico o bastante para não caber recusa por generalidade**, e
    genérico o bastante para não permitir entrega parcial literal

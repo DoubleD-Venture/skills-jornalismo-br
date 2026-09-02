@@ -88,7 +88,7 @@ processo → licitação → contrato → aditivos → pagamentos
 ```
 
 Monte a linha do tempo com o que tiver e marque os buracos. Para cada buraco,
-já escreva o pedido de LAI correspondente — é o uso mais produtivo do Diário
+já escreva o pedido de LAI correspondente. É o uso mais produtivo do Diário
 Oficial.
 
 ### 5. Converter em pauta

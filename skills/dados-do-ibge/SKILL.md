@@ -1,6 +1,6 @@
 ---
 name: dados-do-ibge
-description: Apura estatística oficial brasileira do IBGE — PNAD, IPCA, Censo, PIB — escolhendo a série certa, respeitando margem de erro e evitando comparação indevida entre períodos e metodologias. Use em pauta com número de desemprego, inflação, renda ou população.
+description: Apura estatística oficial brasileira do IBGE (PNAD, IPCA, Censo, PIB), escolhendo a série certa, respeitando margem de erro e evitando comparação indevida entre períodos e metodologias. Use em pauta com número de desemprego, inflação, renda ou população.
 license: MIT
 doubled:
   titulo: Estatística oficial (IBGE)
@@ -72,7 +72,8 @@ período do ano anterior, ou use série com ajuste sazonal e diga que usou.
 **Margem de erro.** PNAD é pesquisa amostral. Variação pequena entre dois
 períodos pode não ser estatisticamente distinguível de zero. Antes de escrever
 "subiu", verifique se a diferença é maior que o intervalo de confiança. Em
-recorte pequeno — um estado, um grupo específico — a margem cresce muito.
+recorte pequeno, como um estado ou um grupo específico, a margem cresce
+muito.
 
 **Recorte pequeno demais.** Quanto menor o grupo, maior o erro amostral. Dado
 por município na PNAD frequentemente não existe, e quando existe pode não ser

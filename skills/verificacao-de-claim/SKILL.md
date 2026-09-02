@@ -28,7 +28,7 @@ tratar como alegação de fato algo que era previsão, opinião ou juízo de val
 
 Ela não decide o veredito sozinha e não tem acesso a fonte nenhuma por conta
 própria. Ela estrutura o trabalho e obriga a evidência a existir antes do
-veredito. Se você não trouxer fonte, o veredito fica em `Não verificado` — e
+veredito. Se você não trouxer fonte, o veredito fica em `Não verificado`, e
 isso é o comportamento correto, não uma falha.
 
 ## Procedimento

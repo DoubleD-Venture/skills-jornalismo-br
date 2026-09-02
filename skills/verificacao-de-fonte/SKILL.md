@@ -29,7 +29,7 @@ assessoria.
 SIFT, de Mike Caulfield. Quatro movimentos, e o primeiro é o que quase todo
 mundo pula.
 
-### S — Stop (pare)
+### S: Stop (pare)
 
 Antes de ler, pare e responda: eu sei o que é isso? Se não sei, não leio ainda.
 Ler primeiro e avaliar depois é como a desinformação entra: o texto já
@@ -38,7 +38,7 @@ construiu o enquadramento antes de você julgar a origem.
 Pare de novo se o material provocou reação forte. Material feito para circular
 é otimizado para indignação, e indignação encurta a checagem.
 
-### I — Investigate (investigue a fonte)
+### I: Investigate (investigue a fonte)
 
 Descubra **quem publicou**, e não o que a página diz sobre si mesma.
 
@@ -56,7 +56,7 @@ Sinais de alerta que valem mais que a aparência do site:
 - nome que imita veículo conhecido
 - "estudo" sem metodologia, sem amostra e sem autor
 
-### F — Find (procure cobertura melhor)
+### F: Find (procure cobertura melhor)
 
 A pergunta não é "esta fonte é confiável?", e sim "**existe fonte melhor para
 a mesma coisa?**". Quase sempre existe.
@@ -64,7 +64,7 @@ a mesma coisa?**". Quase sempre existe.
 Se a alegação é relevante, procure quem mais a reportou. Se ninguém mais
 reportou algo que seria notícia grande, isso é informação sobre a alegação.
 
-### T — Trace (rastreie até a origem)
+### T: Trace (rastreie até a origem)
 
 Siga a alegação até a fonte primária. O caminho típico da distorção:
 
